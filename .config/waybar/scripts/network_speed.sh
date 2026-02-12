@@ -75,4 +75,7 @@ fi
 # Output all together
 
 # Example: " 204KB/s  5KB/s - 󰤨 HomeWifi"
-echo " $(format_rate "$rx_speed")  $(format_rate "$tx_speed") - $extra_info"
+# Add green color to speed icons
+DL_ICON='<span color="#00ff66"></span>'
+UL_ICON='<span color="#00ff66"></span>'
+echo "$DL_ICON $(format_rate "$rx_speed") $UL_ICON $(format_rate "$tx_speed") - $extra_info"
