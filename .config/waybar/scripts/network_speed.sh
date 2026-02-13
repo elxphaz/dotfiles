@@ -56,11 +56,11 @@ extra_info=""
 
 if [ -d "/sys/class/net/$interface/wireless" ]; then
     # WiFi: show network name
-    ssid=$(iwgetid "$interface" -r)
+    ssid=$(iw dev "$interface" link | grep -oP 'SSID: \K.*')
     if [ -n "$ssid" ]; then
-        extra_info="󰤨 $ssid"
+        extra_info="📶 $ssid"
     else
-        extra_info="󰤨 unknown"
+        extra_info="📶 unknown"
     fi
 else
     # Ethernet: show IP
