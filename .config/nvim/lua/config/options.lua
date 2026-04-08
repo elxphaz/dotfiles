@@ -3,6 +3,8 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 
+opt.guicursor = "a:blinkon1"
+
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.tabstop = 2
@@ -17,7 +19,7 @@ opt.incsearch = true
 opt.ignorecase = true
 opt.smartcase = true
 
-opt.scrolloff = 8
+opt.scrolloff = 4
 opt.sidescrolloff = 8
 opt.signcolumn = "yes"
 opt.cursorline = true
@@ -42,3 +44,4 @@ opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 opt.completeopt = "menuone,noselect"
+vim.o.background = "dark"

@@ -1,9 +1,9 @@
-local function opts(desc)
-  return { noremap = true, silent = true, desc = desc }
-end
+vim.g.mapleader = " "
 
 local function bind(mode, key, action, opts)
   return vim.keymap.set(mode, key, action, opts)
 end
 
-bind("n", "<leader>fe", ":Ex<CR>", opts("File Explorer"));
+bind("n", "<leader>fe", "<cmd>Explore<cr>", { noremap = true});
+
+vim.keymap.set("n", "<ESC><ESC>", "<cmd>nohlsearch<cr>")
