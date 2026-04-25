@@ -1,0 +1,31 @@
+# Secrets
+.bashrc
+**/.credentials.json
+**/secrets.env
+**/*.pem
+**/*.key
+
+# Per-machine / runtime Claude state (do not sync)
+.claude/projects/
+.claude/sessions/
+.claude/session-env/
+.claude/todos/
+.claude/tasks/
+.claude/plans/
+.claude/shell-snapshots/
+.claude/file-history/
+.claude/paste-cache/
+.claude/backups/
+.claude/cache/
+.claude/chrome/
+.claude/debug/
+.claude/downloads/
+.claude/ide/
+.claude/plugins/
+.claude/teams/
+.claude/telemetry/
+.claude/history.jsonl
+.claude/settings.local.json
+.claude/policy-limits.json
+.claude/stats-cache.json
+.claude/mcp-needs-auth-cache.json
