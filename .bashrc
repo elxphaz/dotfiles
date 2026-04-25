@@ -23,3 +23,5 @@ esac
 # opencode
 export PATH=/home/eliphaz/.opencode/bin:$PATH
 alias op="opencode"
+
+[ -f ~/.config/secrets.env ] && source ~/.config/secrets.env

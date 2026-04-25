@@ -1,5 +1,4 @@
 # Secrets
-.bashrc
 **/.credentials.json
 **/secrets.env
 **/*.pem
