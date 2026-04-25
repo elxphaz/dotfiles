@@ -46,3 +46,12 @@ alias lt='eza --tree --level=2 --icons'
 
 # bat as colored cat
 alias cat='bat --paging=never --style=plain'
+
+# rgf: fuzzy ripgrep — type to search file contents, Enter opens in $EDITOR
+rgf() {
+  local file
+  file=$(rg --line-number --no-heading --color=always --smart-case "${1:-}" |
+    fzf --ansi --delimiter : --preview 'bat --color=always --highlight-line {2} {1}' \
+        --preview-window 'right,60%,+{2}+3/2') &&
+  ${EDITOR:-nvim} "${file%%:*}" "+${file#*:}"
+}
