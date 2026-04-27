@@ -44,8 +44,8 @@ while true; do
         lvl=$(wifi_level "$sig")
         emit "${ssid} ${sig}%" "Wi-Fi: ${ssid} (${sig}%)" "wifi-${lvl}"
     elif [[ "$type" == "ethernet" ]]; then
-        ip=$(ip -o -4 addr show "$iface" 2>/dev/null | awk '{print $4}' | head -1)
-        emit " " "Ethernet: ${iface} ${ip}" "ethernet"
+        ip=$(ip -o -4 addr show "$iface" 2>/dev/null | awk '{print $4}' | awk -F/ '{print $1}' | head -1)
+        emit " ${iface} ${ip}" "Ethernet: ${iface} ${ip}" "ethernet"
     else
         emit " " "Disconnected" "wifi-off"
     fi

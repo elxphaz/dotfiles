@@ -75,40 +75,40 @@
     },
 
     "custom/spotify-prev": {
-        "exec": "/home/eliphaz/.config/waybar/scripts/spotify_button.sh prev",
+        "exec": "/home/sophonie/.config/waybar/scripts/spotify_button.sh prev",
         "return-type": "json",
         "format": "{}",
-        "on-click": "/home/eliphaz/.config/waybar/scripts/spotify_control.sh previous"
+        "on-click": "/home/sophonie/.config/waybar/scripts/spotify_control.sh previous"
     },
 
     "custom/spotify-next": {
-        "exec": "/home/eliphaz/.config/waybar/scripts/spotify_button.sh next",
+        "exec": "/home/sophonie/.config/waybar/scripts/spotify_button.sh next",
         "return-type": "json",
         "format": "{}",
-        "on-click": "/home/eliphaz/.config/waybar/scripts/spotify_control.sh next"
+        "on-click": "/home/sophonie/.config/waybar/scripts/spotify_control.sh next"
     },
 
     "custom/runcat": {
-        "exec": "/home/eliphaz/.config/waybar/scripts/runcat.sh",
+        "exec": "/home/sophonie/.config/waybar/scripts/runcat.sh",
         "return-type": "json",
         "format": "{}",
         "tooltip": true
     },
 
     "custom/spotify": {
-        "exec": "/home/eliphaz/.config/waybar/scripts/spotify_status.sh",
+        "exec": "/home/sophonie/.config/waybar/scripts/spotify_status.sh",
         "return-type": "json",
         "format": "{}",
         "escape": true,
-        "on-click": "bash -c '/home/eliphaz/.config/waybar/scripts/spotify_control.sh play-pause'",
-        "on-click-right": "bash -c '/home/eliphaz/.config/waybar/scripts/spotify_control.sh next'",
-        "on-click-middle": "bash -c '/home/eliphaz/.config/waybar/scripts/spotify_control.sh previous'",
-        "on-scroll-up": "/home/eliphaz/.config/waybar/scripts/spotify_control.sh volume-up",
-        "on-scroll-down": "/home/eliphaz/.config/waybar/scripts/spotify_control.sh volume-down"
+        "on-click": "bash -c '/home/sophonie/.config/waybar/scripts/spotify_control.sh play-pause'",
+        "on-click-right": "bash -c '/home/sophonie/.config/waybar/scripts/spotify_control.sh next'",
+        "on-click-middle": "bash -c '/home/sophonie/.config/waybar/scripts/spotify_control.sh previous'",
+        "on-scroll-up": "/home/sophonie/.config/waybar/scripts/spotify_control.sh volume-up",
+        "on-scroll-down": "/home/sophonie/.config/waybar/scripts/spotify_control.sh volume-down"
     },
 
     "custom/network": {
-        "exec": "/home/eliphaz/.config/waybar/scripts/network.sh",
+        "exec": "/home/sophonie/.config/waybar/scripts/network.sh",
         "return-type": "json",
         "format": "{}"
     },
