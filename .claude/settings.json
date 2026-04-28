@@ -38,6 +38,7 @@
   },
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark",
+  "autoCompactEnabled": true,
   "teammateMode": "tmux",
   "remoteControlAtStartup": true,
   "skipAutoPermissionPrompt": true,
